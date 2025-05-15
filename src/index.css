@@ -1,2 +1,21 @@
 @import "tailwindcss";
 
+
+@utility container{
+    margin: 0 auto;
+}
+
+@theme {
+    --color-primary: #222831  ;
+    --color-secondary: #393E46  ;
+    --color-brand: #948979  ;
+    --color-base: #DFD0B8  ;
+    --color-text: #EAE4D5  ;
+
+    --font-headerFont:  "Cal Sans", sans-serif ;
+    --font-regularFont:   "PT Sans", sans-serif;
+}
+
+body{
+    background-color: #222831 ;
+}
