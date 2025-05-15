@@ -1,21 +1,72 @@
 @import "tailwindcss";
 
-
-@utility container{
-    margin: 0 auto;
+@utility container {
+  margin: 0 auto;
 }
 
 @theme {
-    --color-primary: #222831  ;
-    --color-secondary: #393E46  ;
-    --color-brand: #948979  ;
-    --color-base: #DFD0B8  ;
-    --color-text: #EAE4D5  ;
+  --color-primary: #222831;
+  --color-secondary: #393e46;
+  --color-brand: #948979;
+  --color-base: #dfd0b8;
+  --color-text: #eae4d5;
 
-    --font-headerFont:  "Cal Sans", sans-serif ;
-    --font-regularFont:   "PT Sans", sans-serif;
+  --font-headerFont: "Cal Sans", sans-serif;
+  --font-regularFont: "PT Sans", sans-serif;
 }
 
-body{
-    background-color: #222831 ;
+body {
+  background-color: #222831;
+}
+a {
+  display: inline-block !important;
+}
+
+.form_input {
+  outline: none;
+  text-align: center;
+  color: #eae4d5;
+  background-color: #222831;
+  letter-spacing: 0.5px;
+  padding: 7px 10px;
+  cursor: pointer;
+}
+
+.button_style {
+  font-weight: 600;
+  font-family: "PT Sans", sans-serif;
+  color: #eae4d5;
+  width: fit-content;
+  border: 2.5px solid #948979;
+  border-radius: 40px;
+
+  transition: all linear 0.2s;
+}
+
+.button_style:hover {
+  background-color: #eae4d5;
+  color: #222831;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.light_button_style {
+  font-weight: 600;
+  font-family: "PT Sans", sans-serif;
+  width: fit-content;
+  color: #222831;
+  border: 2.5px solid #948979;
+  border-radius: 40px;
+
+  background-color: #eae4d5;
+  color: #222831;
+
+  transition: all linear 0.2s;
+}
+
+.light_button_style:hover {
+  background-color: #393e46;
+  color: #eae4d5;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
