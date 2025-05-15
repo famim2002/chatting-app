@@ -4,7 +4,7 @@ const ChatBox = () => {
   return (
     <div>
       <div className="container">
-        <h1 className="text-[120px]  ">this si chat pages</h1>
+       
       </div>
     </div>
   );

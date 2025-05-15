@@ -1,9 +1,12 @@
 import React from "react";
 import SignUpForm from "../componenets/sign-in/up/SignUpForm"
+import BackButton from "../componenets/common-components/backButton"
 
 const SignUp = () => {
   return (
-    <section className="px-3 py-28">
+    <>
+   <BackButton/>
+    <section className="px-3 py-5">
       <div className="container">
         <div className="flex flex-col gap-6 items-center">
           <div className=" w-[310px] sm:w-[600px]  bg-secondary rounded-2xl">
@@ -20,7 +23,8 @@ const SignUp = () => {
           </div>
         </div>
       </div>
-    </section>
+      </section>
+      </>
   );
 };
 

@@ -70,3 +70,28 @@ a {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
+
+
+.nav_shadow{
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.back_button{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #393e46;
+  border: 10px solid #222831;
+  outline: 3px solid #948979;
+  color: #948979;
+  font-size: 30px;
+  transition: .3s;
+}
+.back_button:hover{
+  
+  color: #222831;
+  outline: 3px solid #eae4d5;
+  background-color: #eae4d5;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+  rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
