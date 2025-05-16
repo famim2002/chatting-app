@@ -1,5 +1,5 @@
 import React from "react";
-import Users from "../componenets/chatBox/Users"
+import Users from "../componenets/chatBox/Users";
 
 const ChatBox = () => {
   return (
@@ -13,7 +13,72 @@ const ChatBox = () => {
           />
         </div>
         <div className="grid grid-cols-1 gap-1 border-t border-brand pt-5">
-       
+          <Users
+            image="/shimanto-image.jpg"
+            name="shimanto"
+            time="10.00 am"
+            massage="hi"
+          />
+          <Users
+            image="/sample-image (1).jpg"
+            name="john doe"
+            time="1.30 pm"
+            massage="hi"
+          />
+          <Users
+            image="/sample-image (6).jpg"
+            name="kachi chima"
+            time="1.39 pm"
+            massage="hi"
+          />
+          <Users
+            image="/johnny-image.jpg"
+            name="johnny da"
+            time="8.10 am"
+            massage="hi"
+          />
+          <Users
+            image="/sample-image (4).jpg"
+            name="teacher"
+            time="5.10 am"
+            massage="hi"
+          />
+          <Users
+            image="/sample-image (7).jpg"
+            name="teni dhachi"
+            time="10.29 pm"
+            massage="hi"
+          />
+          <Users
+            image="/sample-image (3).jpg"
+            name="jessy mihan"
+            time="9.37 am"
+            massage="hi"
+          />
+          <Users
+            image="/sample-image (11).jpg"
+            name="bou"
+            time="6.11 pm"
+            massage="i love you"
+          />
+          <Users
+            image="/sample-image (8).jpg"
+            name="kareem"
+            time="8.22 pm"
+            massage="hi"
+          />
+          <Users
+            image="/sample-image (10).jpg"
+            name="joverostki"
+            time="10.00 pm"
+            massage="hi"
+          />
+          <Users
+            image="/sample-image (5).jpg"
+            name="unishama"
+            time="9.30 am"
+            massage="hi"
+          />
         </div>
       </div>
     </section>
