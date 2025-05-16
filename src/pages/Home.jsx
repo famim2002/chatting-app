@@ -1,12 +1,15 @@
 import React from 'react'
+import Navbar from '../componenets/layout/NavBar'
+import ChatBox from './ChatBox'
+
 
 const Home = () => {
   return (
-    <div>
-      <div className="container">
-        <div className="px-5 py-3 bg-secondary">
-          <h1 className="text-[120px]  ">this si home pages</h1>
-        </div>
+    <div className=''>
+      <div className=" flex gap-2">
+        <Navbar/>
+        <ChatBox />
+      
       </div>
     </div>
   );
