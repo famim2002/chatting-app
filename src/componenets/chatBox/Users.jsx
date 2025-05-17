@@ -4,7 +4,10 @@ import { Link } from "react-router"
 const Users = ({ image, name, time, message }) => {
   return (
     <>
-      <Link to="/" className="py-2 rounded-2xl border-x-2 border-primary hover:border-brand hover:bg-secondary">
+      <Link
+        to="/"
+        className="py-2 rounded-2xl border-x-2 border-primary hover:border-brand hover:bg-secondary"
+      >
         <div className="px-5 flex items-center gap-2">
           <div className="overflow-hidden border-5 border-primary rounded-full outline-3 outline-brand">
             <img
@@ -13,14 +16,17 @@ const Users = ({ image, name, time, message }) => {
               alt=""
             />
           </div>
-          <div className="flex justify-between w-[420px]">
+          <div className="flex  justify-between ">
             <div className="flex flex-col gap-1">
               <h2 className="text-[18px] font-regularFont text-text">{name}</h2>
               <p className="text-[15px] font-regularFont text-base underline">
                 {message}
               </p>
             </div>
-            <p className="text-[18px] font-regularFont text-text">{time}</p>
+            <div>
+              {" "}
+              <p className="text-[18px] font-regularFont text-text">{time}</p>
+            </div>
           </div>
         </div>
       </Link>

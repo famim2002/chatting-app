@@ -10,16 +10,23 @@ const ChatBox = () => {
   return (
     <section className="py-5 rounded-r-2xl shadow-2xl">
       <div className="flex flex-col justify-center gap-5">
-        <div className="flex gap-5 items-center px-3 pb-3">
-          <input
-            type="text"
-            className="w-[300px] h-[50px] form_input border-2 text-2xl border-brand rounded-2xl focus:shadow-2xl focus:border-text"
-            placeholder="search"
-            aria-label="Search users"
-          />
-          <Link className="text-3xl text-brand border-5 p-1 bg-secondary  border-primary outline-2 outline-brand rounded-4xl transition-all hover:bg-text hover:outline-text hover:text-primary ">
-            <IoIosSearch />
-          </Link>
+        <div
+          className="flex flex-col gap-5 justify-between items-center px-3 pb-3
+        sm:flex-row md:flex-col xl:flex-row"
+        >
+          <div className="flex items-center gap-2">
+            <div className="max-w-xl">
+              <input
+                type="text"
+                className=" inline-block form_input border-2 text-2xl border-brand rounded-2xl focus:shadow-2xl focus:border-text"
+                placeholder="search"
+                aria-label="Search users"
+              />
+            </div>
+            <Link className="text-3xl text-brand border-5 p-1 bg-secondary  border-primary outline-2 outline-brand rounded-4xl transition-all hover:bg-text hover:outline-text hover:text-primary ">
+              <IoIosSearch />
+            </Link>
+          </div>
 
           <Link
             className="flex text-[30px] border-brand border  px-4 font-headerFont text-base hover:bg-primary hover:text-stone-100  focus:underline"
@@ -31,7 +38,10 @@ const ChatBox = () => {
           </Link>
         </div>
 
-        <div className="h-[820px] overflow-y-auto pr-2 custom-scrollbar">
+        <div
+          className="h-[200px] overflow-y-auto pr-2 custom-scrollbar
+                        md:h-[820px]"
+        >
           <div className="grid grid-cols-1 gap-1 border-t border-brand pt-5">
             <Users
               image="/shimanto-image.jpg"

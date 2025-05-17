@@ -6,12 +6,19 @@ import ChatPage from './ChatPage'
 
 const Home = () => {
   return (
-    <div className=''>
-      <div className=" flex gap-2">
-        <Navbar/>
-        <ChatBox />
-        <ChatPage/>
-      
+    <div className="w-full">
+      <div
+        className="flex flex-col
+                    lg:flex-row"
+      >
+        <Navbar />
+        <div
+          className="w-full flex flex-col
+                     md:flex-row"
+        >
+          <ChatBox />
+          <ChatPage />
+        </div>
       </div>
     </div>
   );

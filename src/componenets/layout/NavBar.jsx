@@ -6,69 +6,40 @@ import BrandLogo from "../common-components/BrandLogo";
 
 const Navbar = () => {
   return (
-    <aside className="h-screen ">
-      <nav className="h-dvh  w-fit  bg-secondary border-r-4 border-r-brand rounded-r-2xl nav_shadow">
-        <div className=" h-dvh flex flex-col justify-between">
+    <>
+      <nav
+        className="w-[280px] px-2 py-3
+                      lg:w-[350px]"
+      >
+        <div className="flex flex-row md:flex-col gap-5">
           <div>
-            <BrandLogo />
+            <BrandLogo  />
           </div>
-
-          <div className=" flex flex-col gap-5 border-b border-brand pb-5 ">
-            <Link
-              className="text-[30px] w-[250px]  px-4 font-headerFont text-base hover:bg-primary hover:text-text  focus:underline"
-              to="/"
-            >
-              home
-            </Link>
-
-            <Link
-              className="text-[30px] w-[250px]  px-4 font-headerFont text-base hover:bg-primary hover:text-stone-100  focus:underline"
-              to="/"
-            >
-              chats
-            </Link>
-            <Link
-              className="text-[30px] w-[250px]  px-4 font-headerFont text-base hover:bg-primary hover:text-stone-100  focus:underline"
-              to="/"
-            >
-              groups
-            </Link>
-            <Link
-              className="text-[30px] w-[250px]  px-4 font-headerFont text-base hover:bg-primary hover:text-stone-100  focus:underline"
-              to="/"
-            >
-              spam
-            </Link>
-
-          </div>
-
-          <div className="py-5 flex flex-col gap-5">
-            <Link to="/signUp">
-              <Button title="signUp" styling="button_style ml-3 mt-2 " />
-            </Link>
-
-            <Link to="/login">
-              <Button title="logIn" styling="button_style ml-3 " />
-            </Link>
-          </div>
-          <div className="flex items-center gap-2 px-2 py-4 border-brand border-t">
-            <img
-              className="w-[50px] rounded-full "
-              src="/my-image.jpg"
-              alt=""
-            />
-            <div>
-              <h3 className="text-[20px] text-base font-regularFont">
-                Famim Yash
-              </h3>
-              <small className="underline text-stone-300 font-regularFont active:bg-brand">
-                <Link to="/">edit profile</Link>
-              </small>
+          <div>
+            <div className="px-2 flex flex-col gap-5 ">
+              <Link
+                to="/"
+                className="px-4 py-1  text-[30px] text-base font-headerFont hover:bg-secondary focus:underline"
+              >
+                home
+              </Link>
+              <Link
+                to="/"
+                className="px-4 py-1  text-[30px] text-base font-headerFont hover:bg-secondary focus:underline"
+              >
+                chats
+              </Link>
+              <Link
+                to="/"
+                className="px-4 py-1  text-[30px] text-base font-headerFont hover:bg-secondary focus:underline"
+              >
+                groups
+              </Link>
             </div>
           </div>
         </div>
       </nav>
-    </aside>
+    </>
 
     // <div>
     //   <ul className="flex justify-center gap-20 py-10">
