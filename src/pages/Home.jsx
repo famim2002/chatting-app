@@ -13,8 +13,8 @@ const Home = () => {
       >
         <Navbar />
         <div
-          className="w-full flex flex-col
-                     md:flex-row"
+          className="w-full flex flex-col gap-5
+                     md:flex-row "
         >
           <ChatBox />
           <ChatPage />
