@@ -4,7 +4,7 @@ import { Link } from "react-router"
 const Users = ({ image, name, time, massage }) => {
   return (
     <>
-      <Link to="/" className="py-1 rounded-2xl hover:bg-secondary ">
+      <Link to="/" className="py-1 rounded-2xl border-x-2 border-primary hover:border-brand hover:bg-secondary">
         <div className="px-5 flex items-center gap-2">
           <div className="overflow-hidden border-5 border-primary rounded-full outline-2 outline-brand">
             <img
