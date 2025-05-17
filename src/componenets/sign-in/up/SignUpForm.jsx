@@ -1,8 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
 import Button from "../../common-components/Button"
 
 const SignUpForm = () => {
+  let [firstName, setFirstName] = useState()
+  let [lastName, setLastName] = useState()
+  let [emailName, setEmail] = useState()
+  let [cellNumber, setCellNumber] = useState()
+  let [password, setPassword] = useState()
+  let [passConfirm, setPassConfirm] = useState()
 
+  let [firstNameErr, setFirstNameErr] = useState()
+  let [lastNameErr, setLastNameErr] = useState()
+  let [emailNameErr, setEmailErr] = useState()
+  let [cellNumberErr, setCellNumberErr] = useState()
+  let [passwordErr, setPasswordErr] = useState()
+  let [passConfirmErr, setPassConfirmErr] = useState()
 
 
   return (
@@ -13,13 +25,13 @@ const SignUpForm = () => {
             className="grid grid-cols-1 gap-2  
                           sm:grid-cols-2"
           >
-            <input  onChange={}
+            <input  onChange={handle}
               className="form_input  text-xl font-regularFont font-semibold rounded-full border-2 border-brand placeholder-brand  focus:border-base focus:placeholder-base "
               type="text"
               placeholder="first name"
             />
             <p>{}</p>
-            <input  onChange={}
+            <input  onChange={handle}
               className="form_input  text-xl font-regularFont font-semibold  rounded-full border-2 border-brand placeholder-brand  focus:border-base focus:placeholder-base  "
               type="text"
               placeholder="last name"
@@ -27,25 +39,25 @@ const SignUpForm = () => {
             <p>{}</p>
           </div>
           <div className="grid grid-cols-1 gap-5">
-            <input  onChange={}
+            <input  onChange={handle}
               className="form_input  text-xl font-regularFont  font-semibold rounded-full border-2 border-brand placeholder-brand  focus:border-base focus:placeholder-base  "
               type="email"
               placeholder="email address"
             /> 
             <p>{}</p>
-            <input onChange={}
+            <input onChange={handle}
               className="form_input  text-xl font-regularFont font-semibold  rounded-full border-2 border-brand placeholder-brand  focus:border-base focus:placeholder-base  "
               type="number"
               placeholder="phone number"
             />
             <p>{}</p>
-            <input  onChange={}
+            <input  onChange={handle}
               className="form_input  text-xl font-regularFont font-semibold  rounded-full border-2 border-brand placeholder-brand  focus:border-base focus:placeholder-base  "
               type="password"
               placeholder="password"
             />
             <p>{}</p>
-            <input  onChange={}
+            <input  onChange={handle}
               className="form_input  text-xl font-regularFont font-semibold  rounded-full border-2 border-brand placeholder-brand  focus:border-base focus:placeholder-base  "
               type="password"
               placeholder="password confirm"
