@@ -2,6 +2,9 @@ import React from "react";
 import Button from "../../common-components/Button"
 
 const SignUpForm = () => {
+
+
+
   return (
     <div>
       <div className="px-5 sm:px-10 md:px-25 py-20  bg-secondary rounded-2xl">
@@ -10,38 +13,44 @@ const SignUpForm = () => {
             className="grid grid-cols-1 gap-2  
                           sm:grid-cols-2"
           >
-            <input
+            <input  onChange={}
               className="form_input  text-xl font-regularFont font-semibold rounded-full border-2 border-brand placeholder-brand  focus:border-base focus:placeholder-base "
               type="text"
               placeholder="first name"
             />
-            <input
+            <p>{}</p>
+            <input  onChange={}
               className="form_input  text-xl font-regularFont font-semibold  rounded-full border-2 border-brand placeholder-brand  focus:border-base focus:placeholder-base  "
               type="text"
               placeholder="last name"
             />
+            <p>{}</p>
           </div>
           <div className="grid grid-cols-1 gap-5">
-            <input
+            <input  onChange={}
               className="form_input  text-xl font-regularFont  font-semibold rounded-full border-2 border-brand placeholder-brand  focus:border-base focus:placeholder-base  "
               type="email"
               placeholder="email address"
-            />
-            <input
+            /> 
+            <p>{}</p>
+            <input onChange={}
               className="form_input  text-xl font-regularFont font-semibold  rounded-full border-2 border-brand placeholder-brand  focus:border-base focus:placeholder-base  "
               type="number"
               placeholder="phone number"
             />
-            <input
+            <p>{}</p>
+            <input  onChange={}
               className="form_input  text-xl font-regularFont font-semibold  rounded-full border-2 border-brand placeholder-brand  focus:border-base focus:placeholder-base  "
               type="password"
               placeholder="password"
             />
-            <input
+            <p>{}</p>
+            <input  onChange={}
               className="form_input  text-xl font-regularFont font-semibold  rounded-full border-2 border-brand placeholder-brand  focus:border-base focus:placeholder-base  "
               type="password"
               placeholder="password confirm"
             />
+            <p>{}</p>
           </div>
 
           <div

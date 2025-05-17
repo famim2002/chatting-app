@@ -1,20 +1,26 @@
 import React from "react";
 import Users from "../componenets/chatBox/Users";
+import { IoIosSearch } from "react-icons/io";
+import { Link } from "react-router"
+
+<IoIosSearch />
 
 const ChatBox = () => {
   return (
     <section className="py-5 rounded-r-2xl shadow-2xl">
       <div className="flex flex-col justify-center gap-5">
-        <div className="px-3 pb-3">
+        <div className="flex gap-5 items-center px-3 pb-3">
           <input
             type="text"
             className="w-[300px] h-[50px] form_input border-2 text-2xl border-brand rounded-2xl focus:shadow-2xl focus:border-text"
             placeholder="search"
             aria-label="Search users"
           />
+          <Link className="text-3xl text-brand border-5 p-1 bg-secondary  border-primary outline-2 outline-brand rounded-4xl transition-all hover:bg-text hover:outline-text hover:text-primary ">
+            <IoIosSearch />
+          </Link>
         </div>
 
-       
         <div className="h-[820px] overflow-y-auto pr-2 custom-scrollbar">
           <div className="grid grid-cols-1 gap-1 border-t border-brand pt-5">
             <Users
@@ -88,54 +94,53 @@ const ChatBox = () => {
 
             <Users
               image="/sample-image (12).jpg"
-              name="teacher"
+              name="micky"
               time="5.10 am"
               message="hi"
             />
             <Users
               image="/sample-image (13).jpg"
-              name="teni dhachi"
+              name="matt mali"
               time="10.29 pm"
               message="hi"
             />
             <Users
               image="/sample-image (14).jpg"
-              name="jessy mihan"
+              name="jenny"
               time="9.37 am"
               message="hi"
             />
             <Users
               image="/sample-image (15).jpg"
-              name="bou"
+              name="kelssy"
               time="6.11 pm"
               message="i love you"
             />
             <Users
               image="/sample-image (16).jpg"
-              name="kareem"
+              name="dani"
               time="8.22 pm"
               message="hi"
             />
             <Users
               image="/sample-image (17).jpg"
-              name="joverostki"
+              name="pattaya"
               time="10.00 pm"
               message="hi"
             />
             <Users
               image="/sample-image (18).jpg"
-              name="unishama"
+              name="otina mana"
               time="9.30 am"
               message="hi"
             />
-           
+
             <Users
               image="/sample-image (2).jpg"
-              name="unishama"
+              name="kachi chiwa"
               time="9.30 am"
               message="hi"
             />
-            
           </div>
         </div>
       </div>
