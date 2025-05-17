@@ -8,8 +8,8 @@ const Home = () => {
   return (
     <div className="w-full">
       <div
-        className="flex flex-col
-                    lg:flex-row"
+        className="flex flex-col 
+                    lg:flex-row "
       >
         <Navbar />
         <div
