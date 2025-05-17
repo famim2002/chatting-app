@@ -39,18 +39,25 @@ let [userName, setUserName] = useState("")
           <div className="grid grid-cols-1 gap-5">
             <input
               onChange={handleUserName}
-              className="form_input  text-xl font-regularFont font-semibold rounded-full border-2 border-brand placeholder-brand  focus:border-base focus:placeholder-base "
+              className={`form_input text-xl font-regularFont font-semibold rounded-full border-2 ${
+                userNameErr
+                  ? "border-red-500 placeholder-red-500"
+                  : "border-brand placeholder-brand"
+              } focus:border-base focus:placeholder-base`}
               type="text"
-              placeholder="user name"
+              placeholder={userNameErr || "first name"}
             />
-            <p className="text-[18px] text-red-700">{userNameErr}</p>
+
             <input
               onChange={handlePassword}
-              className="form_input  text-xl font-regularFont font-semibold  rounded-full border-2 border-brand placeholder-brand  focus:border-base focus:placeholder-base  "
+              className={`form_input text-xl font-regularFont font-semibold rounded-full border-2 ${
+                passwordErr
+                  ? "border-red-500 placeholder-red-500"
+                  : "border-brand placeholder-brand"
+              } focus:border-base focus:placeholder-base`}
               type="password"
-              placeholder="password"
+              placeholder={passwordErr || "password"}
             />
-            <p className="text-[18px] text-red-700">{passwordErr}</p>
           </div>
 
           <div className="grid grid-cols-1 gap-10">

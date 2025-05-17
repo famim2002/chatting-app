@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import Button from "../common-components/Button";
 import BrandLogo from "../common-components/BrandLogo";
 
+
 const Navbar = () => {
   return (
     <aside className="h-screen ">
@@ -38,6 +39,7 @@ const Navbar = () => {
             >
               spam
             </Link>
+
           </div>
 
           <div className="py-5 flex flex-col gap-5">

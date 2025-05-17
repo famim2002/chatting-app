@@ -1,9 +1,10 @@
 import React from "react";
 import Users from "../componenets/chatBox/Users";
 import { IoIosSearch } from "react-icons/io";
-import { Link } from "react-router"
+import { Link } from "react-router";
+import { GoPlus } from "react-icons/go";
 
-<IoIosSearch />
+<IoIosSearch />;
 
 const ChatBox = () => {
   return (
@@ -18,6 +19,15 @@ const ChatBox = () => {
           />
           <Link className="text-3xl text-brand border-5 p-1 bg-secondary  border-primary outline-2 outline-brand rounded-4xl transition-all hover:bg-text hover:outline-text hover:text-primary ">
             <IoIosSearch />
+          </Link>
+
+          <Link
+            className="flex text-[30px] border-brand border  px-4 font-headerFont text-base hover:bg-primary hover:text-stone-100  focus:underline"
+            to="/"
+          >
+            <p className="flex items-center gap-2">
+              add <GoPlus />
+            </p>
           </Link>
         </div>
 
@@ -42,8 +52,8 @@ const ChatBox = () => {
               message="hi"
             />
             <Users
-              image="/johnny-image.jpg"
-              name="johnny da"
+              image="/sample-image.jpg"
+              name="johnny daze"
               time="8.10 am"
               message="hi"
             />
@@ -67,8 +77,14 @@ const ChatBox = () => {
             />
             <Users
               image="/sample-image (11).jpg"
-              name="bou"
+              name="wife 1"
               time="6.11 pm"
+              message="i love you"
+            />
+            <Users
+              image="/sample-image (15).jpg"
+              name="wife 2"
+              time="6.9 pm"
               message="i love you"
             />
             <Users
@@ -90,8 +106,6 @@ const ChatBox = () => {
               message="hi"
             />
 
-            {/* needs to be changed */}
-
             <Users
               image="/sample-image (12).jpg"
               name="micky"
@@ -109,12 +123,6 @@ const ChatBox = () => {
               name="jenny"
               time="9.37 am"
               message="hi"
-            />
-            <Users
-              image="/sample-image (15).jpg"
-              name="kelssy"
-              time="6.11 pm"
-              message="i love you"
             />
             <Users
               image="/sample-image (16).jpg"
