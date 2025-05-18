@@ -1,7 +1,7 @@
 import React from "react";
 import { TbArrowBackUp } from "react-icons/tb";
 import { Link } from "react-router"
-<TbArrowBackUp />
+
 
 const BackButton = () => {
   return (
