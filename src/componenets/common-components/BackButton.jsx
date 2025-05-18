@@ -1,5 +1,6 @@
 import React from "react";
-import { TbArrowBackUp } from "react-icons/tb";
+import { TbArrowBackUp } from "react-icons/tb"
+
 import { Link } from "react-router"
 
 
