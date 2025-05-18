@@ -32,12 +32,11 @@ a {
   cursor: pointer;
 }
 
-
 .button_style {
   font-weight: 600;
   font-family: "PT Sans", sans-serif;
   color: #eae4d5;
- 
+
   border: 2.5px solid #948979;
   border-radius: 40px;
 
@@ -72,12 +71,11 @@ a {
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-
-.nav_shadow{
+.nav_shadow {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 }
 
-.back_button{
+.back_button {
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -86,17 +84,15 @@ a {
   outline: 3px solid #948979;
   color: #948979;
   font-size: 30px;
-  transition: .3s;
+  transition: 0.3s;
 }
-.back_button:hover{
-  
+.back_button:hover {
   color: #222831;
   outline: 3px solid #eae4d5;
   background-color: #eae4d5;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-  rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
-
 
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;

@@ -1,7 +1,7 @@
 import React from "react";
 
 import BackButton from "../componenets/common-components/backButton";
-import SignInForm from "../componenets/sign-in/up/SignInForm"
+import SignInForm from "../componenets/sign-in/up/SignInForm";
 
 const Login = () => {
   return (

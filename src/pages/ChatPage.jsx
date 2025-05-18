@@ -7,12 +7,10 @@ import { Link } from "react-router";
 const ChatPage = () => {
   return (
     <>
-      <section className="w-full h-[90dvh] px-4 py-3">
-        <div
-          className=" flex  justify-between "
-        >
+      <section className=" w-full h-dvh md:h-auto  py-3 border-2 border-brand rounded-lg">
+        <div className="px-4 flex  justify-between pb-3 border-b-2 border-brand  rounded-xl shadow-2xl">
           <div
-            className="flex flex-col  gap-1 
+            className=" flex flex-col  gap-1 
                        xl:gap-3 xl:flex-row xl:items-end "
           >
             <img
@@ -27,11 +25,9 @@ const ChatPage = () => {
               johnny daze
             </h2>
           </div>
-          <div
-            className="flex  items-center gap-5  "
-          >
+          <div className="flex  items-center gap-5  ">
             <Link
-              to="/"
+              to="tel:+0154644646"
               className="p-2 ] text-base  hover:text-primary bg-secondary rounded-full border-4 border-primary outline outline-brand hover:bg-text  hover:outline-base "
             >
               <BsTelephone
@@ -41,7 +37,7 @@ const ChatPage = () => {
             </Link>
 
             <Link
-              to="/"
+              to="tel:+0154644646"
               className="p-2 ] text-base  hover:text-primary bg-secondary rounded-full border-4 border-primary outline outline-brand hover:bg-text  hover:outline-base "
             >
               <GoDeviceCameraVideo

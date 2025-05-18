@@ -1,8 +1,7 @@
-import React from 'react'
-import Navbar from '../componenets/layout/NavBar'
-import ChatBox from './ChatBox'
-import ChatPage from './ChatPage'
-
+import React from "react";
+import Navbar from "../componenets/layout/NavBar";
+import ChatBox from "./ChatBox";
+import ChatPage from "./ChatPage";
 
 const Home = () => {
   return (
@@ -22,6 +21,6 @@ const Home = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Home
+export default Home;

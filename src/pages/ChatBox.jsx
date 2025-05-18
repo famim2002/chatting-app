@@ -11,14 +11,15 @@ const ChatBox = () => {
     <section className="py-5 rounded-r-2xl shadow-2xl">
       <div className="flex flex-col justify-center gap-5">
         <div
-          className="flex flex-col gap-5 justify-between items-center px-3 pb-3
-        sm:flex-row md:flex-col xl:flex-row"
+          className="flex flex-col gap-5 justify-between items-center px-3 pb-3 border-b border-brand shadow-2xl
+        sm:flex-row md:flex-col xl:flex-row "
         >
           <div className="flex items-center gap-2">
-            <div className="max-w-xl">
+            <div className="">
               <input
                 type="text"
-                className=" inline-block form_input border-2 text-2xl border-brand rounded-2xl focus:shadow-2xl focus:border-text"
+                className=" inline-block w-[250px] form_input border-2 text-2xl border-brand rounded-2xl focus:shadow-2xl focus:border-text
+                            md:w-[350px] lg:w-[300px]"
                 placeholder="search"
                 aria-label="Search users"
               />
@@ -29,7 +30,9 @@ const ChatBox = () => {
           </div>
 
           <Link
-            className="flex text-[30px] border-brand border  px-4 font-headerFont text-base hover:bg-primary hover:text-stone-100  focus:underline"
+            className="flex text-[25px] border-brand border  px-4 font-headerFont text-base hover:bg-base  hover:text-primary  
+                      xl:ml-20
+                      xl:text-[30px]"
             to="/"
           >
             <p className="flex items-center gap-2">
@@ -39,10 +42,10 @@ const ChatBox = () => {
         </div>
 
         <div
-          className="h-[200px] overflow-y-auto pr-2 custom-scrollbar
+          className="h-[250px] overflow-y-auto pr-2 custom-scrollbar
                         md:h-[820px]"
         >
-          <div className="grid grid-cols-1 gap-1 border-t border-brand pt-5">
+          <div className="grid grid-cols-1 gap-1  pt-5  ">
             <Users
               image="/shimanto-image.jpg"
               name="shimanto"
@@ -94,7 +97,7 @@ const ChatBox = () => {
             <Users
               image="/sample-image (15).jpg"
               name="wife 2"
-              time="6.9 pm"
+              time="6.09 pm"
               message="i love you"
             />
             <Users

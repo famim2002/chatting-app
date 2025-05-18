@@ -4,9 +4,6 @@ import Button from "../common-components/Button";
 import BrandLogo from "../common-components/BrandLogo";
 import { CiSettings } from "react-icons/ci";
 
-
-
-
 const Navbar = () => {
   return (
     <>
@@ -49,22 +46,22 @@ const Navbar = () => {
               </Link>
             </div>
             <div
-              className="grid grid-cols- gap-2 pt-5 place-items-center
-                          sm:grid-cols-2 
-                          md:gap-2
+              className="grid grid-cols- gap-3 pt-10 place-items-center
+                          sm:grid-cols-2 sm:pt-5 
+                          md:gap-2 
                            lg:grid-cols-1 lg:gap-5 "
             >
               <Link
                 to="/"
-                className="button_style w-[200px]  bg-secondary h-[60px] text-[22px] text-center px-8 py-3
+                className="button_style w-[160px]  bg-secondary h-[50px] text-[22px] text-center px-8 py-2
                            md:w-[140px] md:h-[50px] md:py-2             
-                           lg:w-[200px] lg:h-[60px] lg:py-3   "
+                           lg:w-[200px] lg:h-[60px]  lg:py-3   "
               >
                 sign-up
               </Link>
               <Link
                 to="/"
-                className="button_style w-[200px]  bg-secondary h-[60px] text-[22px] text-center px-8 py-3
+                className="button_style w-[160px]  bg-secondary h-[50px] text-[22px] text-center px-8 py-2
                            md:w-[140px] md:h-[50px] md:py-2             
                            lg:w-[200px] lg:h-[60px] lg:py-3   "
               >
