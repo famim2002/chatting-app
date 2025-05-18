@@ -4,7 +4,7 @@ import { GoDeviceCameraVideo } from "react-icons/go";
 import { BsThreeDotsVertical } from "react-icons/bs";
 import { BsEmojiSmile } from "react-icons/bs";
 import { AiOutlinePicture } from "react-icons/ai";
-import { TbArrowBigRight } from "react-icons/tb";
+import {  TbArrowBigRightFilled } from "react-icons/tb";
 
 import { Link } from "react-router";
 import OtherMassage from "../componenets/common-components/OtherMassage";
@@ -103,32 +103,33 @@ const ChatPage = () => {
             className="mt-auto shadow-2xl flex flex-col items-start justify-between pt-5 gap-2
                           lg:flex-col xl:flex-row"
           >
-            <div className="w-full flex bg-base">
+            <div className="w-full flex bg-base items-center gap-2 pr-1">
               <input
                 type="text"
                 placeholder="type your massage..."
                 className="px-2  w-full h-[50px] text-xl text-primary bg-base font-headerFont tracking-wider outline-0 border-brand border-2 "
               />
 
-              <div className="p-3 bg-secondary border-2 border-primary rounded-full hover:bg-base  group">
+              <div className="p-1 bg-secondary border-2 border-primary rounded-full hover:bg-base  group">
                 <BsEmojiSmile
-                  className="text-[20px] text-base  group-hover:text-primary
+                  className="text-[20px] text-text  group-hover:text-primary
                             xl:text-[25px]"
                 />
               </div>
 
-              <div className="p-3 bg-secondary border-2 border-primary rounded-full hover:bg-base group">
+              <div className="p-1 bg-secondary border-2 border-primary rounded-full hover:bg-base group">
                 <AiOutlinePicture
-                  className="text-[20px] text-base  group-hover:text-primary
+                  className="text-[20px] text-text  group-hover:text-primary
                           xl:text-[25px]"
                 />
               </div>
-            </div>
-            <div className="p-3 bg-secondary border-2 border-brand rounded-full hover:bg-base group">
-              <TbArrowBigRight
-                className="text-[20px] text-base  ml-5  group-hover:text-primary
+              <div className=" bg-secondary border-2 border-brand rounded-full hover:bg-base ml-3 hover:border-primary group">
+
+              <TbArrowBigRightFilled
+                className="text-[20px] text-base ml-3 group-hover:text-primary 
                          lg:text-[25px]  xl:text-[25px]"
               />
+              </div>
             </div>
           </div>
         </div>

@@ -1,6 +1,5 @@
 import React from "react";
 import SignUpForm from "../componenets/sign-in/up/SignUpForm"
-
 import BackButton from "../componenets/common-components/BackButton"
 import { LiaCrownSolid } from "react-icons/lia";
 

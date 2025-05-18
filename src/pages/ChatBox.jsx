@@ -18,8 +18,8 @@ const ChatBox = () => {
             <div className="">
               <input
                 type="text"
-                className=" inline-block w-[250px] form_input border-2 text-2xl border-brand rounded-2xl focus:shadow-2xl focus:border-text
-                            md:w-[350px] lg:w-[300px]"
+                className=" inline-block w-[250px] h-[40px] form_input border-2 text-2xl border-brand rounded-2xl focus:shadow-2xl focus:border-text
+                            md:w-[300px] "
                 placeholder="search"
                 aria-label="Search users"
               />
@@ -28,10 +28,15 @@ const ChatBox = () => {
               <IoIosSearch />
             </Link>
           </div>
+        </div>
 
+        <div
+          className="h-[450px] overflow-y-auto pr-2 custom-scrollbar
+                        md:h-[820px]"
+        >
           <Link
-            className="flex text-[25px] border-brand border  px-4 font-headerFont text-base hover:bg-base  hover:text-primary  
-                      xl:ml-20
+            className="flex text-[25px] border-brand border   ml-5 px-4 font-headerFont text-base hover:bg-base  hover:text-primary  
+                    
                       xl:text-[30px]"
             to="/"
           >
@@ -39,12 +44,6 @@ const ChatBox = () => {
               add <GoPlus />
             </p>
           </Link>
-        </div>
-
-        <div
-          className="h-[250px] overflow-y-auto pr-2 custom-scrollbar
-                        md:h-[820px]"
-        >
           <div className="grid grid-cols-1 gap-1  pt-5  ">
             <Users
               image="/shimanto-image.jpg"
@@ -118,7 +117,6 @@ const ChatBox = () => {
               time="9.30 am"
               message="hi"
             />
-
             <Users
               image="/sample-image (12).jpg"
               name="micky"
@@ -149,7 +147,6 @@ const ChatBox = () => {
               time="10.00 pm"
               message="hi"
             />
-
             <Users
               image="/sample-image (2).jpg"
               name="kachi chiwa"
