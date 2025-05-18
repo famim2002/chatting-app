@@ -110,26 +110,25 @@ const ChatPage = () => {
                 className="px-2  w-full h-[50px] text-xl text-primary bg-base font-headerFont tracking-wider outline-0 border-brand border-2 "
               />
 
-              <div className="p-1 bg-secondary border-2 border-primary rounded-full hover:bg-base  group">
+              <Link className="p-1 bg-secondary border-2 border-primary rounded-full hover:bg-base  group active:bg-base">
                 <BsEmojiSmile
                   className="text-[20px] text-text  group-hover:text-primary
                             xl:text-[25px]"
                 />
-              </div>
+              </Link>
 
-              <div className="p-1 bg-secondary border-2 border-primary rounded-full hover:bg-base group">
+              <Link className="p-1 bg-secondary border-2 border-primary rounded-full hover:bg-base group active:bg-base">
                 <AiOutlinePicture
-                  className="text-[20px] text-text  group-hover:text-primary
+                  className="text-[20px] text-text  group-hover:text-primary 
                           xl:text-[25px]"
                 />
-              </div>
-              <div className=" bg-secondary border-2 border-brand rounded-full hover:bg-base ml-3 hover:border-primary group">
-
-              <TbArrowBigRightFilled
-                className="text-[20px] text-base ml-3 group-hover:text-primary 
+              </Link>
+              <Link className=" bg-secondary border-2 border-brand rounded-full hover:bg-base ml-3 hover:border-primary group active:bg-base">
+                <TbArrowBigRightFilled
+                  className="text-[20px] text-base ml-3 group-hover:text-primary 
                          lg:text-[25px]  xl:text-[25px]"
-              />
-              </div>
+                />
+              </Link>
             </div>
           </div>
         </div>
