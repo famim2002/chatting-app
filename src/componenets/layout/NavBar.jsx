@@ -52,7 +52,7 @@ const Navbar = () => {
                            lg:grid-cols-1 lg:gap-5 "
             >
               <Link
-                to="/"
+                to="/signUp"
                 className="button_style w-[160px]  bg-secondary h-[50px] text-[22px] text-center px-8 py-2
                            md:w-[140px] md:h-[50px] md:py-2             
                            lg:w-[200px] lg:h-[60px]  lg:py-3   "
@@ -60,7 +60,7 @@ const Navbar = () => {
                 sign-up
               </Link>
               <Link
-                to="/"
+                to="/login"
                 className="button_style w-[160px]  bg-secondary h-[50px] text-[22px] text-center px-8 py-2
                            md:w-[140px] md:h-[50px] md:py-2             
                            lg:w-[200px] lg:h-[60px] lg:py-3   "
