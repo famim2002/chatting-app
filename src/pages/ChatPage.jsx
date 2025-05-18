@@ -100,7 +100,7 @@ const ChatPage = () => {
             <OtherMassage otherMassage="goodbye" />
           </div>
           <div
-            className="mt-auto shadow-2xl flex flex-col items-start justify-between pt-5
+            className="mt-auto shadow-2xl flex flex-col items-start justify-between pt-5 gap-2
                           lg:flex-col xl:flex-row"
           >
             <div className="w-full flex bg-base">
@@ -124,7 +124,7 @@ const ChatPage = () => {
                 />
               </div>
             </div>
-            <div className="p-3 bg-secondary border-2 border-primary rounded-full hover:bg-base group">
+            <div className="p-3 bg-secondary border-2 border-brand rounded-full hover:bg-base group">
               <TbArrowBigRight
                 className="text-[20px] text-base  ml-5  group-hover:text-primary
                          lg:text-[25px]  xl:text-[25px]"
