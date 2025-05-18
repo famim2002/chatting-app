@@ -7,6 +7,8 @@ import { AiOutlinePicture } from "react-icons/ai";
 import { TbArrowBigRight } from "react-icons/tb";
 
 import { Link } from "react-router";
+import OtherMassage from "../componenets/common-components/OtherMassage";
+import MyMassage from "../componenets/common-components/MyMassage";
 
 const ChatPage = () => {
   return (
@@ -62,32 +64,71 @@ const ChatPage = () => {
               </Link>
             </div>
           </div>
-          <div className="mt-auto shadow-2xl flex items-center">
-            <input
-              type="text"
-              className="px-2  w-full h-[50px] text-xl text-primary bg-base font-headerFont tracking-wider outline-0 border-brand border-2 "
+          <div className="message flex flex-col gap-2 overflow-y-auto max-h-[calc(100vh-150px)] px-4 py-5">
+            <OtherMassage otherMassage="hi" />
+            <OtherMassage otherMassage="famim" />
+            <MyMassage myMassage="oh hlw, johnny" />
+            <OtherMassage otherMassage="how are u..?" />
+            <MyMassage myMassage="fine,, what about you..?" />
+            <OtherMassage otherMassage="yeah i'm good" />
+            <MyMassage myMassage="you busy on something..?" />
+            <OtherMassage otherMassage="nope" />
+            <MyMassage myMassage="let's have some tea" />
+            <OtherMassage otherMassage="sure," />
+            <MyMassage myMassage="so, how's your education going" />
+            <OtherMassage otherMassage="excellent,, what about you..?" />
+            <MyMassage myMassage="well" />
+            <MyMassage myMassage="actually i'm drop out of university" />
+            <OtherMassage otherMassage="why" />
+            <MyMassage myMassage="i'm thiking on doing something of my own" />
+            <OtherMassage otherMassage="oh that's really impressive" />
+            <OtherMassage otherMassage="tell me more.." />
+            <MyMassage myMassage="sure.." />
+            <MyMassage
+              myMassage="acutally i'm planning to grow my skills,
+                                  kind of technical skill"
             />
-            <div className="px-2 flex gap-2">
+            <OtherMassage otherMassage="any particular..?" />
+            <MyMassage myMassage="i'm looking into web-development" />
+            <OtherMassage otherMassage="that's so cool dude.." />
+            <MyMassage myMassage="thanks" />
+            <OtherMassage otherMassage="okay then , I think that's enough for today" />
+            <OtherMassage otherMassage="we will talk on this someday later.." />
+            <MyMassage myMassage="sure, if you want" />
+            <MyMassage myMassage="goodbye, take care of yourself" />
+            <OtherMassage otherMassage="you too" />
+            <OtherMassage otherMassage="goodbye" />
+          </div>
+          <div
+            className="mt-auto shadow-2xl flex flex-col items-start justify-between pt-5
+                          lg:flex-col xl:flex-row"
+          >
+            <div className="w-full flex bg-base">
+              <input
+                type="text"
+                placeholder="type your massage..."
+                className="px-2  w-full h-[50px] text-xl text-primary bg-base font-headerFont tracking-wider outline-0 border-brand border-2 "
+              />
+
               <div className="p-3 bg-secondary border-2 border-primary rounded-full hover:bg-base  group">
                 <BsEmojiSmile
                   className="text-[20px] text-base  group-hover:text-primary
-                            lg:text-[25px]"
+                            xl:text-[25px]"
                 />
               </div>
 
               <div className="p-3 bg-secondary border-2 border-primary rounded-full hover:bg-base group">
                 <AiOutlinePicture
                   className="text-[20px] text-base  group-hover:text-primary
-                           lg:text-[25px]"
+                          xl:text-[25px]"
                 />
               </div>
-
-              <div className="p-3 bg-secondary border-2 border-primary rounded-full hover:bg-base group">
-                <TbArrowBigRight
-                  className="text-[20px] text-base  ml-5  group-hover:text-primary
-                           lg:text-[25px]"
-                />
-              </div>
+            </div>
+            <div className="p-3 bg-secondary border-2 border-primary rounded-full hover:bg-base group">
+              <TbArrowBigRight
+                className="text-[20px] text-base  ml-5  group-hover:text-primary
+                         lg:text-[25px]  xl:text-[25px]"
+              />
             </div>
           </div>
         </div>

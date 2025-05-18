@@ -149,18 +149,18 @@ const ChatBox = () => {
               time="10.00 pm"
               message="hi"
             />
-            <Users
-              image="/sample-image (18).jpg"
-              name="otina mana"
-              time="9.30 am"
-              message="hi"
-            />
 
             <Users
               image="/sample-image (2).jpg"
               name="kachi chiwa"
               time="9.30 am"
               message="hi"
+            />
+            <Users
+              image="/sample-image (18).jpg"
+              name="wife 3"
+              time="9.30 am"
+              message="I love you"
             />
           </div>
         </div>
