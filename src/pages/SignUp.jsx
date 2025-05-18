@@ -9,7 +9,9 @@ const SignUp = () => {
 
   return (
     <>
-      <BackButton />
+      <div>
+        <BackButton />
+      </div>
       <section className="px-3 py-5">
         <div className="container">
           <div className="flex flex-col gap-6 items-center">
